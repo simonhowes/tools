@@ -16,6 +16,9 @@ if [[ -n $AppRunning ]]; then
 fi
 
 # Check for OS X version
+if [[ $os = 10.12.* ]]; then
+	mailversion="V4"
+else
 if [[ $os = 10.11.* ]]; then
 	mailversion="V3"
 else
